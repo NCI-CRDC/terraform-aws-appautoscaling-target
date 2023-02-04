@@ -48,4 +48,6 @@ No modules.
 |------|-------------|
 | <a name="output_id"></a> [id](#output\_id) | n/a |
 | <a name="output_resource_id"></a> [resource\_id](#output\_resource\_id) | n/a |
+| <a name="output_scalable_dimension"></a> [scalable\_dimension](#output\_scalable\_dimension) | n/a |
+| <a name="output_service_namespace"></a> [service\_namespace](#output\_service\_namespace) | n/a |
 <!-- END_TF_DOCS -->
