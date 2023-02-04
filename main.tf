@@ -1,7 +1,7 @@
-resource "aws_appautoscaling_target" "microservice_autoscaling_target" {
-  max_capacity       = 5
-  min_capacity       = 1
-  resource_id        = "service/${aws_ecs_cluster.ecs_cluster.name}/${aws_ecs_service.service[each.key].name}"
-  scalable_dimension = "ecs:service:DesiredCount"
-  service_namespace  = "ecs"
+resource "aws_appautoscaling_target" "this" {
+  max_capacity       = var.max_capacity
+  min_capacity       = var.min_capacity
+  resource_id        = "service/${var.ecs_cluster_name}/${var.ecs_service_name}"
+  scalable_dimension = var.scalable_dimension
+  service_namespace  = var.service_namespace
 }
